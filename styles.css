@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+   
+
+}
+nav h1{
+       color: rgba(0, 0, 255, 0.543);
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0.5rem;
+   
+ 
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+   
+
+}
+nav ul li:first-child a {
+     color: rgba(0, 0, 255, 0.543);
+
+}
+
+nav ul li a:hover {
+    color: rgba(0, 0, 255, 0.8);
+
+}
+
+#baricon {
+ font-size: 1.5rem;
+ color: rgba(0, 0, 255, 0.595);
+ display: none;
+
+ 
+}
+
+#checkbox{
+    display: none;
+}
+
+/* header section code start here  */
+header {
+
+    padding-top: 8rem;
+    text-align: center;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+
+}
+
+header h1 {
+    color: rgba(0, 0, 255, 0.686);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+header p {
+ color: black;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+header button {
+    background-color: rgba(0, 0, 255, 0.543);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 255, 0.793);
+}
+  /* first section */
+  #first-section {
+    background-color: aliceblue;
+    height: auto;
+
+
+  }
+
+  #first-section #parent{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+   
+}
+#first-section h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#first-section  .Services{
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.941);
+    color: black;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#first-section .Services:hover{
+    background-color: rgba(255, 255, 255, 0.859);
+}
+#first-section .Services h3{
+   font-size: 1.5rem;
+  font-weight: 600;
+   line-height: 1.5;
+   text-transform: capitalize;
+}
+#first-section .Services p{
+   font-size: 1rem;
+ 
+  
+}
+
+
+
+
+/*second-section code start here  */
+
+
+
+
+#second-section{
+    background-image: url('https://media.istockphoto.com/id/2164142773/photo/a-laptop-with-a-blank-screen-sits-on-desk-blur-office-interior.jpg?s=1024x1024&w=is&k=20&c=i6kMTiAIWyIrTfQ32Bc_TenN3i6Ht2ubKtl4ToTzXn8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.about-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10rem ;
+    margin-right: 10rem;
+    gap: 3rem;
+    padding: 2rem;
+    
+
+}
+
+.about-left h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+.about-left p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.9rem;
+
+}
+.about-left ul{
+   line-height: 1.7rem;
+   margin-bottom: 1rem;
+
+}
+.about-left button{
+     
+    background-color:rgba(0, 0, 255, 0.686) ;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+
+}
+
+.about-left button a{
+      
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.about-right{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+
+}
+.about-right-single-item{
+    background-color: rgba(240, 248, 255, 0.706);
+    padding:  1.4rem;
+    text-align: center;
+}
+
+.about-right-single-item h3 {
+  
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+
+/* take care section */
+
+#third-section{
+   
+
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.third-section-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third-section-left{
+    width: 50%;
+}
+.third-section-left h1{
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    text-align: start;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+
+}
+.third-section-left p {
+  
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  
+}
+.third-section-left span {
+  
+    color:rgba(0, 0, 255, 0.686) ;
+    font-weight: bold;
+  
+}
+
+.third-section-left ul {
+  
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  
+}
+
+
+
+
+
+
+.third-section-right{
+    width: 50%;
+}
+.third-section-right img{
+    width: 97%;
+}
+
+
+/* 
+responsive code start  here */
+
+@media only screen and (max-width: 940px) {
+    nav ul {
+       position: fixed;
+       top: 100px;
+       left: -100%;
+       background-color: rgba(255, 255, 255, 0.696);
+       width: 100%;
+       height: 100vh;
+       flex-direction: column;
+       padding: 1rem;
+       text-align: center;
+       transition: all ease-in 0.5s;
+    }
+    nav ul li {
+       margin: 0.8rem 0;
+    }
+    nav ul li a {
+       font-size: 1.4rem;
+    }
+
+    #baricon {
+        display: block;
+        cursor: pointer;
+    }
+    #checkbox:checked ~ ul {
+        left: 0;
+        
+    }
+    #checkbox:checked ~ .baricon   i::before{
+        content: "\f00d";
+      
+
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 688px) {
+
+    
+    header {
+        padding: 5rem 0px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+     }
+     header h1 {
+        font-size: 1.9rem;
+        margin-bottom: 1.5rem;
+     }
+     header p {
+        font-size: 1.2rem;
+        margin-bottom: 1.4rem;
+     }
+
+     header button {
+        padding: 0.9rem 1rem;
+       
+        font-size: 0.9rem;
+    }
+    
+    
+      /*  first-section code start herte */
+  #first-section #parent{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    gap: 2rem;
+
+}
+
+#first-section h2 {
+
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+
+
+  }
+
+/* about section code start here  */
+
+.about-parent{
+    display: block;
+    margin-left:3rem ;
+    margin-right: 3rem;
+    
+
+
+
+}
+
+
+.about-right{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+
+}
+
+
+/* take care section */
+
+.third-section-parent{
+    display: block;
+  
+}
+.third-section-left{
+    width: 97%;
+}
+.third-section-right{
+    width: 97%;
+}
+
+.third-section-left h1{
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    text-align: start;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-top: 2rem;
+
+}
+.third-section-left p {
+  
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  
+}
+
+.third-section-left ul {
+  
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  
+}
+}
+
+
+
+@media only screen and (min-width: 689px)  and (max-width:1023px ){
+
+    
+    header {
+        padding-top: 6.5rem;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+     }
+     header h1 {
+        font-size: 4rem;
+        margin-bottom: 1.4rem;
+     }
+     header p {
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
+     }
+    
+    
+  #first-section #parent{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    gap: 2rem;
+
+}
+
+header button {
+    padding: 0.9rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* about section code start here  */
+
+.about-parent{
+    display: block;
+    margin-left:3rem ;
+    margin-right: 3rem;
+    
+
+}
+
+
+.about-right{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+
+
+}
+
+/* take care section  */
+
+.third-section-parent{
+    display: block;
+    margin-top: 3rem;
+  
+}
+
+
+.third-section-left{
+    width: 97%;
+}
+.third-section-right{
+    width: 97%;
+}
+.third-section-left h1{
+    font-size: 2.3rem;
+    line-height: 3rem;
+    text-align: start;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-top: 2rem;
+
+}
+.third-section-left p {
+  
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  
+}
+
+.third-section-left ul {
+  
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  
+}
+}
